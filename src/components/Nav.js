@@ -1,22 +1,22 @@
 import React, { useState } from "react";
-import { useRouter } from 'next/router'
 import { Transition } from "@headlessui/react";
-import Link from 'next/link';
 import ActiveLink from './ActiveLink';
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [onSetActive, setOnSetActive] = useState(false);
+  const divRef = React.useRef();
 
   return (
     <div>
-      <nav className="shadow-sm fixed w-full z-10">
-        <div className="w-full">
-          <div className="flex items-center h-[120px] w-full">
-            <div className="flex items-center mx-20 justify-between w-full">
-              <div className="flex justify-center items-center flex-shrink-1">
-                <h1 className="font-bold text-xl cursor-pointer">
-                  <span className="text-black-800">[</span><span className="text-blue-500">dogla</span><span className="text-black-800">]</span> Pedro Barreto
+      <nav className="shadow-sm fixed w-full z-10 smq:ml-[-30px]">
+        <div className="w-full smo:flex smo:m-0 smo:justify-center">
+          <div className="flex smo:flex-col items-center smm:ml-[-10px] h-[80px] w-full">
+            <div className="flex items-center smo:flex smo:justify-center mx-20 smm:ml-[50px] smm:mr-[120px] smm:w-[140px] justify-between w-full">
+              <div className="flex justify-center items-center flex-shrink-1 sms:ml-[-10px]">
+                <h1 className="font-bold text-xl smm:ml-[-15px] smm:mr-[-150px] smb:text-smb cursor-pointer">
+                  <div className="smk:text-smm smk:mr-[34px]">
+                  <span className=" text-black-800">[</span><span className="text-blue-500">dogla</span><span className="text-black-800">]</span> Pedro Barreto
+                  </div>
                 </h1>
               </div>
               <div className="hidden md:block">
@@ -36,7 +36,7 @@ const Nav = () => {
                 </div>
               </div>
             </div>
-            <div className="mr-10 flex md:hidden">
+            <div className="mr-10 flex md:hidden smq:mr-[10px]">
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
@@ -55,8 +55,6 @@ const Nav = () => {
                     aria-hidden="true"
                   >
                     <path
-                      strokeLinecap="round"
-                      strokeLineJoin="round"
                       strokeWidth="2"
                       d="M4 6h16M4 12M4 18h16"
                     />
@@ -71,10 +69,8 @@ const Nav = () => {
                     aria-hidden="true"
                   >
                     <path
-                      strokeLinecap="round"
-                      strokeLineJoin="round"
                       strokeWidth="2"
-                      d="M6 18h18 6M6 6l12 12"
+                      d="M4 12M4 6l18 12M4 18l18-12"
                     />
                   </svg>
                 )}
@@ -94,7 +90,7 @@ const Nav = () => {
           {(ref) => (
             <div className="md:hidden id=mobile-menu">
               <div
-                ref={ref}
+                ref={divRef}
                 className="bg-white pr-5 pl-1 pt-2 pb-3 space-y-1 sm:px-3"
               >
                 <div className="flex flex-now flex-nowarp h-auto items-center">
