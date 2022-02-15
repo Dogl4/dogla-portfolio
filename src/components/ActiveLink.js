@@ -1,9 +1,11 @@
 import { useRouter } from 'next/router'
 
-function ActiveLink({ children, href }) {
+function ActiveLink({ children, href, mobile = false }) {
   const router = useRouter()
-  const defaultClassName = 'cursor-pointer hover:text-white hover:bg-black px-3 py-2 rounded-md text-sm font-medium';
-  const className = router.asPath === href ? 'text-white bg-blue-600' : 'text-black';
+  const desktopCss = 'cursor-pointer hover:text-white hover:bg-black px-3 py-2 rounded-md text-sm font-medium';
+  const mobileCss = 'cursor-pointer flex h-max-[56px] hover:text-white hover:bg-black px-3 py-2 rounded-md text-sm font-medium';
+  const defaultClassName = ((!mobile) ? desktopCss : mobileCss);
+  const className = router.asPath === href ? 'text-white bg-black' : 'text-black';
 
   const handleClick = (e) => {
     e.preventDefault()

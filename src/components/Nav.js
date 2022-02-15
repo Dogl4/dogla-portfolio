@@ -12,35 +12,27 @@ const Nav = () => {
     <div>
       <nav className="shadow-sm fixed w-full z-10">
         <div className="w-full">
-          <div className="flex items-center h-20 w-full">
+          <div className="flex items-center h-[120px] w-full">
             <div className="flex items-center mx-20 justify-between w-full">
-              <div className="flex justify-center items-center flex-shrink-0">
+              <div className="flex justify-center items-center flex-shrink-1">
                 <h1 className="font-bold text-xl cursor-pointer">
                   <span className="text-black-800">[</span><span className="text-blue-500">dogla</span><span className="text-black-800">]</span> Pedro Barreto
                 </h1>
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
-                    <ActiveLink href="/">
-                      Home
-                    </ActiveLink>
-                    <ActiveLink href="/about">
-                      Sobre mim
-                    </ActiveLink>
-                    <ActiveLink href="/projects">
+                  <ActiveLink href="/">
+                    Home
+                  </ActiveLink>
+                  <ActiveLink href="/about">
+                    Sobre mim
+                  </ActiveLink>
+                  <ActiveLink href="/projects">
                     Projetos
-                    </ActiveLink>
-                  <Link
-                    activeClass="contact"
-                    to="contact"
-                    href="/contact"
-                    smooth={true}
-                    offset={50}
-                    duration={500}
-                    className="cursor-pointer text-black hover:text-white px-3 py-2 hover:bg-black rounded-md text-sm font-medium"
-                  >
+                  </ActiveLink>
+                  <ActiveLink href="/contact">
                     Contato
-                  </Link>
+                  </ActiveLink>
                 </div>
               </div>
             </div>
@@ -48,7 +40,7 @@ const Nav = () => {
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="bg-blue-600 inline-flex items-center justify-center p-2 rounded-md text-white hover:bg-blue-600 focus: outline-none focus:ring-offset-2 focus:ring-offset-blue-800 focus:ring-white"
+                className="bg-black inline-flex items-center justify-center p-2 rounded-md text-white hover:black focus: outline-none focus:ring-offset-2 focus:ring-offset-black focus:ring-white"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
@@ -103,41 +95,32 @@ const Nav = () => {
             <div className="md:hidden id=mobile-menu">
               <div
                 ref={ref}
-                className="bg-white px-2 pt-2 pb-3 space-y-1 sm:px-3"
+                className="bg-white pr-5 pl-1 pt-2 pb-3 space-y-1 sm:px-3"
               >
-                <Link
-                  href="/"
-                  activeClass="home"
-                  to="home"
-                  smooth={true}
-                  offset={50}
-                  duration={500}
-                  className="cursor-pointer hover:bg-black-600 text-black hover:text-white block px-2 py-3 w-11/12 -ml-3 rounded-md text-base font-medium"
-                >
-                  Home
-                </Link>
-                <Link
-                  href="/about"
-                  activeClass="about"
-                  to="about"
-                  smooth={true}
-                  offset={50}
-                  duration={500}
-                  className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-2 py-3 w-11/12 -ml-3 rounded-md text-base font-medium"
-                >
-                  Sobre min
-                </Link>
-                <Link
-                  href="/projects"
-                  activeClass="projects"
-                  to="projects"
-                  smooth={true}
-                  offset={50}
-                  duration={500}
-                  className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-2 py-3 w-11/12 -ml-3 rounded-md text-base font-medium"
-                >
-                  Projetos
-                </Link>
+                <div className="flex flex-now flex-nowarp h-auto items-center">
+                  <ul className="w-full list-none">
+                    <li className="mb-[8px] mr-12 h-full">
+                      <ActiveLink href="/" mobile={true} >
+                        Home
+                      </ActiveLink>
+                    </li>
+                    <li className="mb-[8px] mr-12 h-full">
+                      <ActiveLink href="/about" mobile={true}>
+                        Sobre min
+                      </ActiveLink>
+                    </li>
+                    <li className="mb-[8px] mr-12 h-full">
+                      <ActiveLink href="/projects" mobile={true}>
+                        Projetos
+                      </ActiveLink>
+                    </li>
+                    <li className="mb-[8px] mr-12 h-full">
+                      <ActiveLink href="/contact" mobile={true}>
+                        Contato
+                      </ActiveLink>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           )}
