@@ -7,16 +7,15 @@ const Nav = () => {
   const divRef = React.useRef();
 
   return (
-    <div className="bg-white col-span-12 rounded">
-      {/* <nav className="shadow-sm flex bg-cyan-900 w-screen z-10"> */}
-      <nav className="shadow-sm md:flex mt-6 pb-8 w-screen z-10">
+    <div className="col-span-12 row-span-1 rounded">
+      <nav className="shadow-sm md:flex mt-6 w-screen z-10">
         <div className="w-full smo:flex smo:m-0 smo:justify-center">
           <div className="flex smo:flex-col items-center smm:ml-[-10px] w-full">
             <div className="flex items-center smo:flex smo:justify-center mx-20 smm:ml-[50px] smm:mr-[120px] smm:w-[140px] justify-between w-full">
               <div className="flex justify-center items-center flex-shrink-1 sms:ml-[-10px]">
                 <h1 className="font-bold text-cyan-700 text-xl smm:ml-[-15px] smm:mr-[-150px] smb:text-smb cursor-pointer">
                   <div className="smk:text-smm smk:mr-[34px]">
-                  <span className=" text-stone-700">[</span><span className="text-emerald-700">dogla</span><span className="text-stone-700">]</span>
+                  <span className=" text-stone-700">&lt;</span><span className="text-emerald-700">Dogla</span><span className="text-stone-700"> /&gt;</span>
                   </div>
                 </h1>
               </div>
@@ -26,7 +25,7 @@ const Nav = () => {
                     Home
                   </ActiveLink>
                   <ActiveLink href="/about">
-                    Sobre mim
+                    SobreMim
                   </ActiveLink>
                   <ActiveLink href="/projects">
                     Projetos
