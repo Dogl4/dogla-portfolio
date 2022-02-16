@@ -7,20 +7,21 @@ const Nav = () => {
   const divRef = React.useRef();
 
   return (
-    <div>
-      <nav className="shadow-sm fixed w-full z-10 smq:ml-[-30px]">
+    <div className="ml-[-32px]">
+      {/* <nav className="shadow-sm fixed w-full z-10 smq:ml-[-30px]"> */}
+      <nav className="shadow-sm fixed bg-cyan-900 w-screen z-10 smq:ml-[-30px]">
         <div className="w-full smo:flex smo:m-0 smo:justify-center">
-          <div className="flex smo:flex-col items-center smm:ml-[-10px] h-[80px] w-full">
+          <div className="flex smo:flex-col items-center smm:ml-[-10px] w-full">
             <div className="flex items-center smo:flex smo:justify-center mx-20 smm:ml-[50px] smm:mr-[120px] smm:w-[140px] justify-between w-full">
               <div className="flex justify-center items-center flex-shrink-1 sms:ml-[-10px]">
-                <h1 className="font-bold text-xl smm:ml-[-15px] smm:mr-[-150px] smb:text-smb cursor-pointer">
+                <h1 className="font-bold text-cyan-300 text-xl smm:ml-[-15px] smm:mr-[-150px] smb:text-smb cursor-pointer">
                   <div className="smk:text-smm smk:mr-[34px]">
-                  <span className=" text-black-800">[</span><span className="text-blue-500">dogla</span><span className="text-black-800">]</span> Pedro Barreto
+                  <span className=" text-stone-300">[</span><span className="text-emerald-500">dogla</span><span className="text-stone-300">]</span> Pedro Barreto
                   </div>
                 </h1>
               </div>
               <div className="hidden md:block">
-                <div className="ml-10 flex items-baseline space-x-4">
+                <div className="ml-10 flex items-baseline space-x-2 space-y-2 mb-2">
                   <ActiveLink href="/">
                     Home
                   </ActiveLink>
@@ -30,13 +31,10 @@ const Nav = () => {
                   <ActiveLink href="/projects">
                     Projetos
                   </ActiveLink>
-                  <ActiveLink href="/contact">
-                    Contato
-                  </ActiveLink>
                 </div>
               </div>
             </div>
-            <div className="mr-10 flex md:hidden smq:mr-[10px]">
+            <div className="mr-10 flex md:hidden my-2 smq:mr-[10px]">
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
@@ -108,11 +106,6 @@ const Nav = () => {
                     <li className="mb-[8px] mr-12 h-full">
                       <ActiveLink href="/projects" mobile={true}>
                         Projetos
-                      </ActiveLink>
-                    </li>
-                    <li className="mb-[8px] mr-12 h-full">
-                      <ActiveLink href="/contact" mobile={true}>
-                        Contato
                       </ActiveLink>
                     </li>
                   </ul>
