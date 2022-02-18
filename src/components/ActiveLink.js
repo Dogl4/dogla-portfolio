@@ -2,14 +2,14 @@ import { useRouter } from 'next/router'
 
 function ActiveLink({ children, href, mobile = false }) {
   const router = useRouter()
-  const desktopCss = 'cursor-text hover:bg-sky-800 hover:text-sky-300 px-[17px] py-[10px] text-smb font-medium';
-  const mobileCss = 'cursor-pointer flex h-max-[56px] hover:text-white hover:bg-black px-3 py-2 rounded-md text-sm font-medium';
+  const desktopCss = 'cursor-pointer cursor-text hover:bg-sky-800 hover:text-sky-300 px-[17px] py-[10px] text-smb font-medium';
+  const mobileCss = 'cursor-pointer flex py-2 rounded-md text-smb font-medium';
   const defaultClassName = ((!mobile) ? desktopCss : mobileCss);
   const hrefIs = router.asPath === href;
   const complement = {
-    className: hrefIs ? 'cursor-help hover:bg-zinc-800 text-emerald-700' : 'text-sky-700',
-    init: hrefIs ? '<' : '',
-    out: hrefIs ? ' />' : '',
+    className: hrefIs ? 'cursor-progress hover:bg-zinc-800 text-zinc-200' : 'text-sky-700',
+    init: hrefIs && !mobile ? '<' : '',
+    out: hrefIs && !mobile ? ' />' : '',
   };
 
   const handleClick = (e) => {
@@ -19,9 +19,9 @@ function ActiveLink({ children, href, mobile = false }) {
 
   return (
     <a href={href} onClick={handleClick} className={`${defaultClassName} ${complement.className}`}>
-      <span className=" text-stone-500">{complement.init}</span>
+      <span className=" text-stone-600">{complement.init}</span>
         {children}
-      <span className=" text-stone-500">{complement.out}</span>
+      <span className=" text-stone-600">{complement.out}</span>
     </a>
   )
 }
