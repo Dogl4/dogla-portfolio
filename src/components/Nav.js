@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 import ActiveLink from './ActiveLink';
+import Link from "next/link";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,9 +15,11 @@ const Nav = () => {
             <div className="flex items-center smo:flex smo:justify-center mx-20 smm:ml-[50px] smm:mr-[120px] smm:w-[140px] justify-between w-full">
               <div className="flex justify-center items-center flex-shrink-1 sms:ml-[-10px]">
                 <h1 className="font-bold text-cyan-700 text-xl smm:ml-[-15px] smm:mr-[-150px] smb:text-smb cursor-pointer">
-                  <div className="smk:text-smm smk:mr-[34px]">
-                  <span className=" text-stone-700">&lt;</span><span className="text-emerald-700">Dogla</span><span className="text-stone-700"> /&gt;</span>
-                  </div>
+                  <Link href="/">
+                    <a className="smk:text-smm smk:mr-[34px]">
+                      <span className=" text-stone-700">&lt;</span><span className="text-emerald-700">Dogla</span><span className="text-stone-700"> /&gt;</span>
+                    </a>
+                  </Link>
                 </h1>
               </div>
               <div className="hidden md:block">
