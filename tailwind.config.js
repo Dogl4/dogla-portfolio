@@ -13,6 +13,7 @@ module.exports = {
         smq: { 'max': '302px' },
         smm: { 'max': '415px' },
         smb: { 'max': '450px', 'min': '212px' },
+        md: '769px'
       },
       fontSize: {
         sms: '14px',
