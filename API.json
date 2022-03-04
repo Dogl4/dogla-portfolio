@@ -1,0 +1,10 @@
+[{
+  "id": 1,
+  "name": "Trybewarts",
+  "type": "frontend",
+  "description": "",
+  "img": "https://raw.githubusercontent.com/Dogl4/trybewarts/main/pagina-principal.png",
+  "urlRepo": "https://github.com/Dogl4/trybewarts",
+  "urlSite": "https://dogl4.github.io/trybewarts/index.html",
+  "categories": ["HTML", "CSS", "JavaScript", "Bootstrap"]
+}]

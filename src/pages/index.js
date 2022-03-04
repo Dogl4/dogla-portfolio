@@ -27,7 +27,7 @@ const Home = () => {
             <div className="md:col-span-1 hidden rounded md:flex justify-center">
               <div>
 
-                <Image src={profileImg} alt='TEst' width="350px" height="350px" />
+                <Image src={profileImg} alt='Arte: desenho de um programador' width="350px" height="350px" />
               </div>
             </div>
           </div>

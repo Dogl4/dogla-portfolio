@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from '../components/Footer';
 import Nav from '../components/Nav';
-import styles from '../styles/Home.module.css';
+import data from '../../API.json';
 
 const projects = () => {
   return (
@@ -9,6 +9,8 @@ const projects = () => {
     <div className="grid grid-cols-12 grid-rows-6 w-screen bg-zinc-800">
 
       <Nav />
+
+      { console.log('data', data) }
 
       <div className="bg-stone-500 p-2 row-start-2 row-span-2 col-start-2 col-span-10 rounded flex justify-center">
         <div className="bg-stone-500 grid grid-cols-2 gap-2 grid-rows-6 w-screen">
