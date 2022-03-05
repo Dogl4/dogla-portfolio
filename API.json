@@ -7,4 +7,14 @@
   "urlRepo": "https://github.com/Dogl4/trybewarts",
   "urlSite": "https://dogl4.github.io/trybewarts/index.html",
   "categories": ["HTML", "CSS", "JavaScript", "Bootstrap"]
+},
+{
+  "id": 2,
+  "name": "Blog API",
+  "type": "backend",
+  "description": "",
+  "img": "https://raw.githubusercontent.com/Dogl4/a-project-blogs-api/main/blogApi.gif",
+  "urlRepo": "https://github.com/Dogl4/a-project-blogs-api",
+  "urlSite": "",
+  "categories": ["NodeJs", "ExpressJs", "MySQL", "ES6", "Sequilize", "Joi", "JWT", "Dotenv"]
 }]
