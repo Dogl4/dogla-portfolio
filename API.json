@@ -24,7 +24,7 @@
     "name": "Trybesmith",
     "type": "backend",
     "description": "Uma simulação de requisições à uma API de itens medievais, utilizando Typescript com arquitetura CRUD.",
-    "img": "",
+    "img": "https://raw.githubusercontent.com/Dogl4/trybesmith/main/trybesmith.gif",
     "urlRepo": "https://github.com/Dogl4/trybesmith",
     "urlSite": "",
     "categories": ["TypeScript", "NodeJs", "Express", "MySQL", "Joi", "JWT", "Dotenv"]
