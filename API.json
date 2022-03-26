@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Trybewarts",
+    "type": "frontend",
+    "description": "Este projeto trata-se de um formulário bem simples, que simula um envio pelo método POST.",
+    "img": "https://raw.githubusercontent.com/Dogl4/trybewarts/main/pagina-principal.png",
+    "urlRepo": "https://github.com/Dogl4/trybewarts",
+    "urlSite": "https://dogl4.github.io/trybewarts/index.html",
+    "categories": ["HTML", "CSS", "JavaScript", "Bootstrap"]
+  },
+  {
+    "id": 2,
+    "name": "Blog API",
+    "type": "backend",
+    "description": "",
+    "img": "https://raw.githubusercontent.com/Dogl4/a-project-blogs-api/main/blogApi.gif",
+    "urlRepo": "https://github.com/Dogl4/a-project-blogs-api",
+    "urlSite": "",
+    "categories": ["NodeJs", "Express", "MySQL", "ES6", "Sequilize", "Joi", "JWT", "Dotenv"]
+  },
+  {
+    "id": 3,
+    "name": "Trybesmith",
+    "type": "backend",
+    "description": "",
+    "img": "",
+    "urlRepo": "https://github.com/Dogl4/trybesmith",
+    "urlSite": "",
+    "categories": ["TypeScript", "NodeJs", "Express", "MySQL", "Joi", "JWT", "Dotenv"]
+  },
+  {
+    "id": 4,
+    "name": "Trybe-Futebol-Clube",
+    "type": "fullstack",
+    "description": "",
+    "img": "https://raw.githubusercontent.com/Dogl4/trybe-futebol-clube/main/trybe-futebol-club-frontend.gif",
+    "urlRepo": "https://github.com/Dogl4/trybe-futebol-clube",
+    "urlSite": "",
+    "categories": ["TypeScript", "NodeJs", "Express", "MySQL", "Docker", "JWT", "Dotenv"]
+  }
+]

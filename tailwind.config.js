@@ -16,6 +16,8 @@ module.exports = {
         md: '769px'
       },
       fontSize: {
+        smo: '8px',
+        smq: '10px',
         sms: '14px',
         smm: '14px',
         smb: '22px',

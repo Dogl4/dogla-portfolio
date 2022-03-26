@@ -1,31 +1,50 @@
-import React from 'react'
-import Footer from '../components/Footer';
-import Nav from '../components/Nav';
-import styles from '../styles/Home.module.css';
+import React from "react";
+import Footer from "../components/Footer";
+import Nav from "../components/Nav";
+import styles from "../styles/Home.module.css";
+import Link from "next/link";
+import perfil from "../../public/perfil.jpeg";
+import Image from "next/image";
 
 const about = () => {
   return (
-    <div className="flex min-h-screen justify-center">
-      <div className="grid grid-cols-12 grid-rows-6 w-screen bg-zinc-800">
-
+    <div className="flex justify-center min-h-screen overscroll-auto">
+      <div className="grid grid-rows-3 md:grid-rows-6 md:h-screen bg-zinc-800">
         <Nav />
 
-        <div className="bg-stone-500 p-2 row-start-2 row-span-2 col-start-2 col-span-10 rounded flex justify-center">
+        <div className="md:row-start-2 md:mt-[0] mt-[60px] row-start-1 row-span-2 col-start-2 col-span-10 rounded flex justify-center">
+          <div className="grid grid-cols-2 gap-2">
 
-          <div className="bg-stone-500 grid grid-cols-2 gap-2 grid-rows-5 w-screen">
-            <div className="bg-white p-2 items-stretch col-span-1 row-span-4 rounded">
-              <h2>About</h2>
+
+            <div className="py-0 px-1 md:col-span-1 row-end-1 col-span-2 flex justify-center">
+              <div className={styles.card}>
+                <Image src={perfil} alt='Douglas' className="rounded-2xl" width="300px" height="300px" />
+              </div>
             </div>
-            <div className="bg-white p-2 items-stretch col-span-1 row-span-4 rounded">02</div>
-            <div className="bg-white p-2 items-stretch col-span-2 row-span-2 rounded">03</div>
+            <div className="text-white md:col-span-1 col-span-2 rounded md:flex justify-center">
+              <div className={styles.card}>
+                <p>
+                  Olá, meu nome é <strong>Pedro</strong>, tenho <strong>25</strong> anos. Nasci e moro em <strong>Taubaté</strong>.
+                </p>
+                <p>
+                  Formado em técnico em <strong>informática</strong> pela{" "}
+                  <strong>Etec</strong>. Sou apaixonado por tecnologia e
+                  desenvolvimento de software, e atualmente estou cursando o curso
+                  de <strong>web full-stack</strong> na <strong>Trybe</strong>.
+                </p>
+                <p></p>
+                <Link href="/projects">Confira alguns dos meus projetos.</Link>
+              </div>
+            </div>
+
+
           </div>
         </div>
 
         <Footer />
-
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default about;
