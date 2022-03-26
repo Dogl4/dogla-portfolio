@@ -12,7 +12,7 @@ const projects = () => {
         <Nav />
 
         <div className="p-0 row-start-1 row-span-2 col-start-2 col-span-10 flex justify-center">
-          <div className="grid grid-cols-2 gap-4 mb-4 grid-rows-6">
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-4 mb-4 grid-rows-6">
             {data.map((project) => <Card key={project.id} current={project} />)}
           </div>
         </div>
