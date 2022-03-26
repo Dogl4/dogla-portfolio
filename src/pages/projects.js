@@ -2,30 +2,25 @@ import React from 'react'
 import Footer from '../components/Footer';
 import Nav from '../components/Nav';
 import data from '../../API.json';
+import Card from '../components/Projects/Card';
 
 const projects = () => {
   return (
     <div className="flex min-h-screen justify-center">
-    <div className="grid grid-cols-12 grid-rows-6 w-screen bg-zinc-800">
+      <div className="grid grid-cols-12 grid-rows-2 bg-zinc-800">
 
-      <Nav />
+        <Nav />
 
-      { console.log('data', data) }
-
-      <div className="bg-stone-500 p-2 row-start-2 row-span-2 col-start-2 col-span-10 rounded flex justify-center">
-        <div className="bg-stone-500 grid grid-cols-2 gap-2 grid-rows-6 w-screen">
-          <div className="bg-white p-2 items-stretch col-span-1 row-span-4 rounded">
-            <h2>Projetos</h2>
+        <div className="p-0 row-start-1 row-span-2 col-start-2 col-span-10 flex justify-center">
+          <div className="grid grid-cols-2 gap-4 mb-4 grid-rows-6">
+            {data.map((project) => <Card key={project.id} current={project} />)}
           </div>
-          <div className="bg-white p-2 items-stretch col-span-1 row-span-4 rounded">02</div>
-          <div className="bg-white p-2 items-stretch col-span-2 row-span-2 rounded">03</div>
         </div>
+
+        <Footer />
+
       </div>
-
-      <Footer />
-
     </div>
-  </div>
   )
 }
 
