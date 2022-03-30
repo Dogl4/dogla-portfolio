@@ -38,5 +38,15 @@
     "urlRepo": "https://github.com/Dogl4/trybewarts",
     "urlSite": "https://dogl4.github.io/trybewarts/index.html",
     "categories": ["HTML", "CSS", "JavaScript", "Bootstrap"]
+  },
+  {
+    "id": 5,
+    "name": "Trivia",
+    "type": "frontend",
+    "description": "Um projeto que renderiza os dados de uma API. Este foi um projeto em grupo.",
+    "img": "https://raw.githubusercontent.com/Dogl4/trivia/main/trivia.gif",
+    "urlRepo": "https://github.com/Dogl4/trivia",
+    "urlSite": "https://trivia-dogl4.vercel.app/",
+    "categories": ["React", "Redux", "JavaScript", "CSS"]
   }
 ]
