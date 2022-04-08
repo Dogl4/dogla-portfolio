@@ -27,7 +27,7 @@ class MyDocument extends Document {
           <link rel="icon" href="/favicon.ico" />
           <meta http-httpEquiv="content-language" content="pt-br" charset="utf-8" />
         </Head>
-        <body>
+        <body className='overflow-x-hidden'>
           <Main />
           <NextScript />
         </body>
