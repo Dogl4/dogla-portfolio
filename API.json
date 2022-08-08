@@ -4,10 +4,19 @@
     "name": "Blog API",
     "type": "backend",
     "description": "Uma API e um banco de dados para a produção de conteúdo para um blog.",
-    "img": "https://raw.githubusercontent.com/Dogl4/a-project-blogs-api/main/blogApi.gif",
+    "img": "https://raw.githubusercontent.com/Dogl4/Blogs-Api/main/images/blogApi.gif",
     "urlRepo": "https://github.com/Dogl4/a-project-blogs-api",
     "urlSite": "",
-    "categories": ["NodeJs", "Express", "MySQL", "ES6", "Sequilize", "Joi", "JWT", "Dotenv"]
+    "categories": [
+      "NodeJs",
+      "Express",
+      "MySQL",
+      "ES6",
+      "Sequilize",
+      "Joi",
+      "JWT",
+      "Dotenv"
+    ]
   },
   {
     "id": 2,
@@ -17,7 +26,15 @@
     "img": "https://raw.githubusercontent.com/Dogl4/trybe-futebol-clube/main/trybe-futebol-club-frontend.gif",
     "urlRepo": "https://github.com/Dogl4/trybe-futebol-clube",
     "urlSite": "",
-    "categories": ["TypeScript", "NodeJs", "Express", "MySQL", "Docker", "JWT", "Dotenv"]
+    "categories": [
+      "TypeScript",
+      "NodeJs",
+      "Express",
+      "MySQL",
+      "Docker",
+      "JWT",
+      "Dotenv"
+    ]
   },
   {
     "id": 3,
@@ -27,7 +44,15 @@
     "img": "https://raw.githubusercontent.com/Dogl4/trybesmith/main/trybesmith.gif",
     "urlRepo": "https://github.com/Dogl4/trybesmith",
     "urlSite": "",
-    "categories": ["TypeScript", "NodeJs", "Express", "MySQL", "Joi", "JWT", "Dotenv"]
+    "categories": [
+      "TypeScript",
+      "NodeJs",
+      "Express",
+      "MySQL",
+      "Joi",
+      "JWT",
+      "Dotenv"
+    ]
   },
   {
     "id": 4,
@@ -37,7 +62,12 @@
     "img": "https://raw.githubusercontent.com/Dogl4/trybewarts/main/trybewarts.gif",
     "urlRepo": "https://github.com/Dogl4/trybewarts",
     "urlSite": "https://dogl4.github.io/trybewarts/index.html",
-    "categories": ["HTML", "CSS", "JavaScript", "Bootstrap"]
+    "categories": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap"
+    ]
   },
   {
     "id": 5,
@@ -47,6 +77,11 @@
     "img": "https://raw.githubusercontent.com/Dogl4/trivia/main/trivia.gif",
     "urlRepo": "https://github.com/Dogl4/trivia",
     "urlSite": "https://trivia-dogl4.vercel.app/",
-    "categories": ["React", "Redux", "JavaScript", "CSS"]
+    "categories": [
+      "React",
+      "Redux",
+      "JavaScript",
+      "CSS"
+    ]
   }
 ]

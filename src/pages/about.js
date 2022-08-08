@@ -29,7 +29,7 @@ const about = () => {
               <div className="text-white md:col-span-1 col-span-2 rounded md:flex justify-center">
                 <div className={styles.card}>
                   <p>
-                    Olá, meu nome é <strong>Pedro</strong>, tenho <strong>25</strong> anos. Nasci e moro em <strong>Taubaté</strong>.
+                    Olá, meu nome é <strong>Pedro</strong>. Nascido, criado e atualmente local onde moro em <strong>Taubaté</strong>.
                   </p>
                   <p>
                     Formado em técnico em <strong>informática</strong> pela{" "}
